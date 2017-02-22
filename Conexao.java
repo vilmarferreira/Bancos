@@ -27,6 +27,7 @@ public class Conexao {
 		   try{
 			Class.forName("com.mysql.jdbc.Driver");
                         System.out.println("Conectado");
+			return DriverManager.getConnection("jdbc:mysql://localhost/locadora?useSSL=false", "root", "123456");
                        
 		   }
 		   catch(ClassNotFoundException e)
